@@ -1,0 +1,15 @@
+#!/usr/bin/env ash
+set -efu
+usercnt=$(get -e accounts -e add -l)
+cnt=0
+until [[ $usercnt -eq $cnt ]]; do
+  set -- $(get -e accounts -e add -e $cnt \
+                  -e uid -u -p \
+                  -e shell -u -p \
+                  -e groups -u -p \
+                  -e login -u)
+  cut -f1 -d: /etc/passwd | grep -q "$4" && return 0
+  useradd -u "$1" -s "$2" -G "$3" -m "$4"
+  cnt=$(($cnt+1))
+done
+

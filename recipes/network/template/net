@@ -1,0 +1,5 @@
+interface=
+address=
+netmask=
+gateway=
+ntpdopts=
