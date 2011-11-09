@@ -9,7 +9,7 @@ JSON data:
       "groups": "wheel,audio",
       "shell": "/bin/sh" }
     ]
-  },
+  }
 }
 
 Recipe:
