@@ -85,7 +85,7 @@ trivially automate the generation of the mkfile for Mk.
 
 ## HOW LIGHT IS IT?
 
-    ed@Gimokod /usr/bin $ ls -la mk jshon busybox-static
+    ed@Gimokod /usr/bin $ ls -la mk jshon busybox.static
     -rwxr-xr-x 1 root root 730456 Nov  8 03:57 busybox.static
     -rwxr-xr-x 1 root root  50504 Nov  8 03:58 jshon
     -rwxr-xr-x 1 root root 645208 Nov  5 17:02 mk
