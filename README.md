@@ -11,6 +11,7 @@ considered the most important component. Mk is meant to replace Make for
 building software but its features make it suitable for general purpose use.
 
 Of these features here are the most significant:
+
 1. Non-file virtual target support.
 1. Entire recipe if passed to the shell without internal interpretation.
 1. Custom out-of-date determination.
@@ -94,6 +95,6 @@ All components can be compiled to static binaries with under 2MiB total space
 
 ## REFERENCE
 
-[Mk: A Successor to Make](http://doc.cat-v.org/bell_labs/mk/mk.pdf) -- PDF
-[Maintaining Files on Plan 9 with Mk](http://www.vitanuova.com/inferno/papers/mk.html) -- HTML
+* [Mk: A Successor to Make](http://doc.cat-v.org/bell_labs/mk/mk.pdf) -- PDF
+* [Maintaining Files on Plan 9 with Mk](http://www.vitanuova.com/inferno/papers/mk.html) -- HTML
 
