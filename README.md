@@ -29,14 +29,14 @@ trivially automate the generation of the mkfile for Mk.
 
     NPROC=99
     PATH=/usr/bin:/etc/colorum
-    base:QV: accounts authorized_keys network package_config permissions
+    base:QV: accounts authorized_keys network package permissions
     accounts:QV:
       recipes/accounts/add
     authorized_keys:QV: accounts
       recipes/authorized_keys/enforce
     network:QV:
       recipes/network/config
-    package_config:QV:
+    package:QV:
       recipes/package/config
       recipes/package/install
     permissions:QV: authorized_keys
