@@ -21,33 +21,19 @@ The DSL is compiled and generates the mkfile that is passed to Mk.
 
 ## EXAMPLE
 
-    user "add" {
-      login "ed";
-      base_dir "/home";
-      comment "user";
-      home_dir "/home/ed";
-      expire_date "2037-01-01";
-      inactive "0";
-      group "1337";
-      groups "audio,video";
-      create_home "true";
-      user_group "true";
-      shell "/bin/bash";
-      uid "1337";
-    }
-
-or:
-
-    user "add" {
-      login "ed";
-    }
-
-    passthrough {
-      run [[
-        echo "this is a test"
-        touch /tmp/test
-      ]]
-    }
+  package vim
+    action install
+  user ed
+    action add
+    home "/home/ed"
+  directory "/tmp/test space"
+    action create
+    mode 0755
+  file '/tmp/test quoted string'
+    action create
+    mode 0644
+  echo 1
+    action run
 
 ## GENERATED MKFILE
 
