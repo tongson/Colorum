@@ -21,19 +21,19 @@ The DSL is compiled and generates the mkfile that is passed to Mk.
 
 ## EXAMPLE
 
-  package vim
-    action install
-  user ed
-    action add
-    home "/home/ed"
-  directory "/tmp/test space"
-    action create
-    mode 0755
-  file '/tmp/test quoted string'
-    action create
-    mode 0644
-  echo 1
-    action run
+    package vim
+      action install
+    user ed
+      action add
+      home "/home/ed"
+    directory "/tmp/test space"
+      action create
+      mode 0755
+    file '/tmp/test quoted string'
+      action create
+      mode 0644
+    echo 1
+      action run
 
 ## GENERATED MKFILE
 
