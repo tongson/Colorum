@@ -1,0 +1,3 @@
+#!/bin/sh
+# parameters = action mode
+/usr/bin/install -d -m
