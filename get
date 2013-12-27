@@ -1,2 +1,0 @@
-#!/usr/bin/env ash
-/usr/bin/jshon $@ < /etc/colorum/colorum.json
